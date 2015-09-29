@@ -32,6 +32,7 @@ $ webpack-dev-server --content-base public/
 
 
 为了加载你的打包文件，你需要在 public 目录下创建一个 index.html 文件：
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +43,7 @@ $ webpack-dev-server --content-base public/
   <script src="bundle.js"></script>
 </body>
 </html>
+```
 
 浏览器来运行你的app：localhost:8080/ ，假如你像上面一样设置了 publicPath， 比如: pubilicPath: "/assets/" 的话，你需要打开 localhost:8080/assets/
 
