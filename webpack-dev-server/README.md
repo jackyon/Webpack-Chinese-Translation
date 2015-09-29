@@ -1,7 +1,9 @@
+<a href="https://webpack.github.io/docs/webpack-dev-server.html">原文链接</a>
+
 WEBPACK DEV SERVER:
 
 webpack-dev-server 是一个轻量的node.js Express服务器, 它采用了webpack-dev-middleware来进行webpack打包。它的运行环境是通过socket.io来连接到服务器的。socket.io会向客户端发出编译状态的信息，然后这些信息会对这些事件作出反应。你可以根据项目的需求选择不同的模式。打个比方你有下面这些配置文件：
-
+```
 var path = require("path");
 module.exports = {
   entry: {
@@ -13,13 +15,16 @@ module.exports = {
     filename: "bundle.js"
   }
 };
+```
 
 你有一个 app 文件夹，里头有你的所有初始化入口文件，这些文件将会统一捆版打包至根目录的 build 文件夹中。
 
 
 <h2>Content Base:</h2>
 webpack-dev-server 将会以当前目录运行这些文件，除非你特别声明了个特殊路径给content base， 如：
+```
 $ webpack-dev-server --content-base public/
+```
 
 当你用上面的语句特别声明了content base后，webpack-dev-server将会以 pubilc为默认目录来运行文件。它会自动监听所有你的源文件变化，当有发生改动时，它会自动重新编译打包。这个修改的打包文件是在指定的 publicpath 相对路径（查看api）， 它不会被写入到配置的输出目录 pubuilc 中。
 
