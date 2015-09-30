@@ -16,14 +16,14 @@
 <h1>模块系统风格</h1>
 有很多不同的标准去定义依赖关系和导出值:
 <ul>
-  <li><script/>标签 风格(非模块系统) </li>
+  <li>script 标签 风格(非模块系统) </li>
   <li>CommonJS</li>
   <li>AMD</li>
   <li>ES6 模块</li>
   <li>还有更多...</li>
 </ul>
 
-<h2><script/> 标签风格</h2>
+<h2>script 标签风格</h2>
 如果你没有使用模块系统，你可以用这样的传统方式去处理一个模块化的代码库。
 ```
 <script src="module1.js"></script>
