@@ -32,18 +32,18 @@
 <script src="module3.js"></script>
 ```
 
-模块导出到全局对象的借口， 即window对象。模块可以访问全局对象的依赖借口。
+模块导出到全局对象的接口， 即window对象。模块可以访问全局对象的依赖借口。
 
 <h3>常见问题</h3>
 <ul>
   <li>得注意全局对象是否冲突</li>
-  <li>得注意加载顺序</li>
+  <li>得注意文件加载顺序</li>
   <li>开发人员必须解决模块/库之间的依赖关系</li>
-  <li>在大型项目下，列表会非常大量以及后期难以维护</li>
+  <li>在大型项目下，代码/文件将会越来越庞大并且后期将难以维护</li>
 </ul>
 
 <h2>CommonJS: 同步加载</h2>
-这种风格使用了同步的方法来require加载依赖并返回一个输出接口。模块可以通过添加属性来指定export对象活着设置module.export的值
+这种风格使用了同步的方法来require加载依赖并返回一个输出接口。模块可以通过添加属性来指定export对象或者设置module.export的值
 ```
 require("module");
 require("../file.js");
@@ -59,8 +59,8 @@ module.exports = someValue;
 </ul>
 <h3>缺陷:</h3>
 <ul>
-  <li>阻塞调用不太适合于网络环境。网络请求是异步的</li>
-  <li>不能并行加入多个模块</li>
+  <li>阻塞调用不太适合于网络环境，因为网络请求是异步的</li>
+  <li>不能并行加载多个模块</li>
 </ul>
 
 <h3>实践</h3>
@@ -87,7 +87,7 @@ define("mymodule", ["dep1", "dep2"], function(d1, d2) {
 
 <h3>缺陷</h3>
 <ul>
-  <li>编码开销大（额外代码）</li>
+  <li>编码开销大（额外代码多）</li>
   <li>更难读写</li>
 </ul>
 
@@ -148,26 +148,24 @@ module "localModule" {}
 </ul>
 
 <h2>分块传输</h2>
-看过上面两种方式后，肯定大家会觉得有另外一个更灵活的传输方式会更好，即在大多数情况下，两种方式都可以互相妥协、互补。
-→ 编译所有模块时: 把模块分成多个更小的块
+看过上面两种方式后，肯定大家会觉得上面两种方式都不是很靠谱，假如有另外一个更灵活的传输方式会更好，即在大多数情况下，两种方式都可以互相妥协、互补。
 
-我们得到多个较小的文件请求，不必要的模块只会在需要的页面下才会被请求，初始请求不会包含全部完整的代码库，而且是较小的。
+比如：编译所有模块时，可以把模块分成多个更小的块
 
-这个"代码分割"需求是开发人员可选的。
+这样的话，我们可以得到多个较小的文件请求，不必要的模块只会在需要加载的页面下才会被请求，初始请求不会加载全部的代码库。
 
 备注：这个想法是来自谷歌的<a href="https://developers.google.com/web-toolkit/doc/latest/DevGuideCodeSplitting">GWT</a>
 
 了解更多 <a href="https://webpack.github.io/docs/code-splitting.html">代码分割</a>
 
 <h1>为什么只有javascript?</h1>
-为什么模块系统只帮助开发者去模块化js而已？实际上还有很多静态资源也需要一起被模块
-
+为什么模块系统只帮助开发者去模块化js而已？实际项目开发上还有很多静态资源也需要一起被模块化:
 <ul>
   <li>css样式</li>
   <li>图像</li>
   <li>web字体</li>
   <li>html模版</li>
-  <li>等等</li>
+  <li>更多...</li>
 </ul>
 
 还有:
@@ -176,10 +174,10 @@ module "localModule" {}
   <li>less/sass 样式 转换成 css 样式</li>
   <li>jade templates → javascript which generates html</li>
   <li>i18n files → something</li>
-  <li></li>
+  <li>更多...</li>
 </ul>
 
-这些应该要简单成:
+这些应该也要有简单的方式去加载，如:
 ```
 require("./style.css");
 require("./style.less");
