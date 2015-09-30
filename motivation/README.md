@@ -155,7 +155,7 @@ module "localModule" {}
 
 这个"代码分割"需求是开发人员可选的。
 
-提示：这个想法是来自谷歌的<a href="https://developers.google.com/web-toolkit/doc/latest/DevGuideCodeSplitting">GWT</a>
+备注：这个想法是来自谷歌的<a href="https://developers.google.com/web-toolkit/doc/latest/DevGuideCodeSplitting">GWT</a>
 
 了解更多 <a href="https://webpack.github.io/docs/code-splitting.html">代码分割</a>
 
