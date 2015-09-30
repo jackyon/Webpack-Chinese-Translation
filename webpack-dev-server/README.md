@@ -1,6 +1,6 @@
 <a href="https://webpack.github.io/docs/webpack-dev-server.html">原文链接</a>
 
-WEBPACK DEV SERVER:
+<h1>WEBPACK DEV SERVER:</h1>
 
 webpack-dev-server 是一个轻量的node.js Express服务器, 它采用了webpack-dev-middleware来进行webpack打包。它的运行环境是通过socket.io来连接到服务器的。socket.io会向客户端发出编译状态的信息，然后这些信息会对这些事件作出反应。你可以根据项目的需求选择不同的模式。打个比方你有下面这些配置文件：
 ```
