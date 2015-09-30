@@ -2,8 +2,9 @@ hm... 由于网络上目前还没有整套完整的webpack 文档翻译，所以
 
 
 翻译进度：
-motivation: 100%
-webpack dev server: 70%
-
+<ul>
+	<li>motivation: 100%</li>
+	<li>webpack dev server: 70%</li>
+</ul>
 
 备注： 本人英语不是很流弊，咬文嚼字的请忽略此git. 
