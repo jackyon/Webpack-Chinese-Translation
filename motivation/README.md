@@ -1,6 +1,7 @@
 <a href="https://webpack.github.io/docs/motivation.html">原文链接</a>
 
 <h1>动机:</h1>
+前言：为什么需要webpack? webpack产生的动机是？
 
 在这个时代，越来越多的网站已经开始进化成web应用了:
 <ul>
@@ -124,24 +125,23 @@ module "localModule" {}
 
 传输模块有2种极端方式:
 <ul>
-  <li>每个模块对应一个请求</li>
-  <li>所有模块来自一个请求</li>
+  <li>每个模块为一个请求</li>
+  <li>所有模块打包成一个请求</li>
 </ul>
 
 两种都是被广泛使用的，但是两者都不是最佳方式:
 <ul>
   <li>
-    每个模块对应一个请求
+    每个模块为一个请求
     <ul>
       <li>优势: 只有需要的模块才会被传输</li>
-      <li>缺陷: 太多请求开销</li>
-      <li>缺陷: 因为请求阻塞延迟，所以应用启动慢</li>
+      <li>缺陷: 太多请求开销导致页面请求阻塞延迟，应用启动慢</li>
     </ul>
   </li>
   <li>
     所有模块来自一个请求
     <ul>
-      <li>优势: 少量请求开销，少量阻塞延迟</li>
+      <li>优势: 少量请求开销，少量阻塞延迟，页面加载快</li>
       <li>缺陷: 不需要的模块也会被传输</li>
     </ul>
   </li>
@@ -159,7 +159,7 @@ module "localModule" {}
 了解更多 <a href="https://webpack.github.io/docs/code-splitting.html">代码分割</a>
 
 <h1>为什么只有javascript?</h1>
-为什么模块系统只帮助开发者去模块化js而已？实际项目开发上还有很多静态资源也需要一起被模块化:
+为什么模块系统只帮助开发者去模块化js而已？实际项目开发上还有很多静态资源也需要一起被模块化，如:
 <ul>
   <li>css样式</li>
   <li>图像</li>
@@ -185,4 +185,7 @@ require("./template.jade");
 require("./image.png");
 ```
 
-了解更多 <a href="https://webpack.github.io/docs/using-loaders.html">使用加载器</a>和<a href="https://webpack.github.io/docs/loaders.html">加载器</a>
+了解更多 <a href="https://webpack.github.io/docs/using-loaders.html">加载器使用方法</a>和<a href="https://webpack.github.io/docs/loaders.html">加载器</a>
+
+
+以上的种种原因就是产生webpack的动机。
