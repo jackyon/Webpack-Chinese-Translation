@@ -2,7 +2,6 @@
 
 <h3>node.js</h3>
 安装 <a href="https://nodejs.org/en/">node.js</a>
-node.js 是一个软件包管理器， 它叫做npm.
 
 <h3>webpack</h3>
 webpack 可以通过 npm 来安装:
