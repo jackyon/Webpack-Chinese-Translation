@@ -102,7 +102,7 @@ define("mymodule", ["dep1", "dep2"], function(d1, d2) {
 <a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html">传送门</a>
 
 <h2>ES6 模块:</h2>
-为了支持支持模块系统，ecmaScript6 增加了一些新的语法来支持它
+为了支持模块系统，ecmaScript6 增加了一些新的语法来支持它
 ```
 import "jquery";
 export function doStuff() {}
