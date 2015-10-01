@@ -4,6 +4,7 @@ hm... 由于网络上目前还没有整套完整的webpack 文档翻译，所以
 翻译进度:
 <ul>
 	<li>motivation: 100%</li>
+	<li>what is webpack: 100%</li>
 	<li>webpack dev server: 70%</li>
 </ul>
 
