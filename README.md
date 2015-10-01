@@ -3,9 +3,9 @@ hm... 由于网络上目前还没有整套完整的webpack 文档翻译，所以
 
 翻译进度:
 <ul>
-	<li><a href="motivation/README.md">Motivation</a>(动机): 100%</li>
-	<li><a href="what is webpack/README.md">What is webpack</a>(webpack是什么): 100%</li>
-	<li><a href="installation/README.md">Installation</a>(安装): 100%</li>
+	<li><a href="motivation/README.md">Motivation</a>: 100% (动机)</li>
+	<li><a href="what is webpack/README.md">What is webpack</a>: 100% (webpack是什么)</li>
+	<li><a href="installation/README.md">Installation</a>: 100% (安装)</li>
 	<li>Usage:</li>
 	<li>Webpack dev server: 70%</li>
 </ul>
