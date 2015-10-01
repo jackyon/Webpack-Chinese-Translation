@@ -27,7 +27,7 @@ hm... 由于网络上目前还没有整套完整的webpack 文档翻译，所以
 			<li>
 				Dev Tools
 				<ul>
-					<li><a href="api/webpack-dev-server/README.md"></a>Webpack dev server: 70%</li>
+					<li><a href="api/webpack-dev-server/README.md">Webpack dev server</a>: 70%</li>
 				</ul>
 			</li>
 		</ul>
