@@ -1,5 +1,7 @@
 hm... 由于网络上目前还没有整套完整的webpack 文档翻译，所以开始一点点地来翻译下 https://webpack.github.io/docs/
 
+备注:
+转载可以， 不过请加版权来源，谢谢～
 
 翻译进度:
 <ul>
@@ -10,7 +12,8 @@ hm... 由于网络上目前还没有整套完整的webpack 文档翻译，所以
 			<li><a href="getting started/what is webpack/README.md">What is webpack</a>: 100%</li>
 			<li><a href="getting started/installation/README.md">Installation</a>: 100%</li>
 			<li>Usage:</li>
-			<li><a href="getting started/using loaders/README.md">Using Loaders</a></li>
+			<li><a href="getting started/using loaders/README.md">Using Loaders</a>: 100%</li>
+			<li><a href="getting started/Using Plugins/README.md">Using Plugins</a>: 100%</li>
 		</ul>
 	</li>
 	<li>
@@ -34,6 +37,3 @@ hm... 由于网络上目前还没有整套完整的webpack 文档翻译，所以
 		</ul>
 	</li>
 </ul>
-
-备注:
-转载可以， 不过请加版权来源，谢谢～
