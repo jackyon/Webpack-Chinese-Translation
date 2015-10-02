@@ -119,3 +119,5 @@ require("url-loader?mimetype=image/png!./file.png");
 ```
 webpack --module-bind "png=url-loader?mimetype=image/png"
 ```
+
+完...
