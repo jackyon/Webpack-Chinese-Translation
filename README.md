@@ -10,6 +10,7 @@ hm... 由于网络上目前还没有整套完整的webpack 文档翻译，所以
 			<li><a href="getting started/what is webpack/README.md">What is webpack</a>: 100%</li>
 			<li><a href="getting started/installation/README.md">Installation</a>: 100%</li>
 			<li>Usage:</li>
+			<li><a href="getting started/using loaders/README.md">Using Loaders</a></li>
 		</ul>
 	</li>
 	<li>
